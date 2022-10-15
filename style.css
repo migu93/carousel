@@ -1,6 +1,42 @@
 .logotype{
-    width: 200px;
+    width: 150px;
 }
 .textBoxSearch{
     width: 300px;
+}
+
+header{
+    background: pink;
+}
+
+.card {
+    border: none;
+    box-shadow: 0 1px 20px 0 rgba(0,0,0,.1);
+}
+
+.buttonS {
+    background: #cda9ac;
+    padding: 10px;
+    display: inline-block;
+    outline: 0;
+    border: 0;
+    margin: -1px;
+    border-radius: 2px;
+    letter-spacing: 1px;
+    color: #F5F5F5;
+    cursor: pointer;
+}
+.button:hover {
+    background: #BA7E7E;
+    -webkit-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+}
+
+body{
+    background: #ffe6ea
+}
+
+.aS{
+   background: #BA7E7E;
+    border-color: black;
 }

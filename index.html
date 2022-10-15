@@ -10,8 +10,6 @@
     <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/carousel/">
     <!-- Bootstrap core CSS -->
 <link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-
     <style>
       .bd-placeholder-img {
         font-size: 1.125rem;
@@ -28,9 +26,9 @@
       }
     </style>
 
-    
     <!-- Custom styles for this template -->
     <link href="carousel.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
   </head>
 
   <header>
@@ -53,7 +51,7 @@
     <div class="px-3 py-2 border-bottom border-2 mb-3">
       <div class="container d-flex flex-wrap justify-content-center">
         <div class="dropdown">
-          <button class="btn btn-secondary dropdown-toggle" style="width: 200px"
+          <button class="btn btn-secondary dropdown-toggle buttonS" style="width: 200px;"
                   type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="true">
             Каталог
           </button>
@@ -65,12 +63,12 @@
         </div>
 
         <form class="col-12 col-lg-auto mb-2 mb-lg-0 me-lg-auto textBoxSearch ">
-          <input type="search"  style="margin-left: 30px; width: 400px" class="form-control" placeholder="Поиск:" aria-label="Search">
+          <input type="search"  style="background: #ffe6ea; margin-left: 30px; width: 400px" class="form-control" placeholder="Поиск:" aria-label="Search">
         </form>
 
-        <div class="text-end align-items-end">
-          <button type="button" class="btn btn-light text-dark me-2">Войти</button>
-          <button type="button" class="btn btn-primary">Зарегестрироваться</button>
+        <div class="text-end align-items-end pb-3">
+          <button type="button" class="btn btn-light text-dark me-2 buttonS">Войти</button>
+          <button type="button" class="btn btn-primary buttonS">Зарегестрироваться</button>
         </div>
       </div>
     </div>
@@ -90,7 +88,7 @@
           <div class="carousel-caption text-start">
             <h1>Сияй. Удивляй</h1>
             <p>Зачем скрывать свою красоту, если ее можно подчеркнуть?</p>
-            <p><a class="btn btn-lg btn-primary" href="#">Каталог</a></p>
+            <p><a class="btn btn-lg btn-primary aS" href="#">Каталог</a></p>
           </div>
         </div>
       </div>
@@ -100,7 +98,7 @@
           <div class="carousel-caption">
             <h1>Забота о себе</h1>
             <p>Ведь что может быть важнее</p>
-            <p><a class="btn btn-lg btn-primary" href="#">Галлерея</a></p>
+            <p><a class="btn btn-lg btn-primary aS"  href="#">Галлерея</a></p>
           </div>
         </div>
       </div>
@@ -109,7 +107,7 @@
           <div class="carousel-caption text-end">
             <h1>Косметика, которая работает</h1>
             <p>Для нас важно, чтобы вы могли чувствовать себя красивой и ухоженной каждый день</p>
-            <p><a class="btn btn-lg btn-primary" href="#">Узнать больше</a></p>
+            <p><a class="btn btn-lg btn-primary aS" href="#">Узнать больше</a></p>
           </div>
         </div>
       </div>
@@ -124,7 +122,7 @@
     </button>
   </div>
   <!-- FOOTER -->
-  <footer class="container">
+  <footer class="container-fluid" style="max-height: 100%">
     <p class="float-end"><a href="#">Назад</a></p>
     <p>&copy; 2022 Company, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
   </footer>
