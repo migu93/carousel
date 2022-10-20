@@ -151,7 +151,7 @@ body {
 }
 
 .mcd-menu li:hover > a {
-    color: #e67e22;
+    color: #FFFFFF;
 }
 .mcd-menu li a.active {
     position: relative;
