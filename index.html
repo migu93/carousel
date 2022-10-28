@@ -35,7 +35,7 @@
     <div class="px-3 py-2 bg-transparent text-white">
       <div class="container">
         <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
-          <a href="/" class="d-flex align-items-center my-2 my-lg-0 me-lg-auto text-white text-decoration-none">
+          <a href="index.html" class="d-flex align-items-center my-2 my-lg-0 me-lg-auto text-white text-decoration-none">
             <img src="Resourses/Логотип%20КДА.png" class="logotype" alt="Логотип">
           </a>
 
@@ -62,14 +62,129 @@
           </ul>
         </div>
 
-        <form class="col-12 col-lg-auto mb-2 mb-lg-0 me-lg-auto textBoxSearch ">
-          <input type="search"  style="background: #ffe6ea; margin-left: 30px; width: 400px" class="form-control" placeholder="Поиск:" aria-label="Search">
+        <form class="col-12 col-lg-auto mb-2 mb-lg-0 me-lg-auto">
+          <input type="search"  style="background: #ffe6ea; margin-left: 30px;" class="form-control" placeholder="Поиск:" aria-label="Search">
         </form>
 
         <div class="text-end align-items-end pb-3">
-          <button type="button" class="btn btn-light text-dark me-2 buttonS">Войти</button>
-          <button type="button" class="btn btn-primary buttonS">Зарегестрироваться</button>
+          <button type="button" class="btn btn-light text-dark me-2 buttonS" data-bs-toggle="modal" data-bs-target="#exampleModalAut">Войти</button>
+          <button type="button" class="btn btn-primary buttonS " data-bs-toggle="modal" data-bs-target="#exampleModalReg">Зарегестрироваться</button>
         </div>
+        <!-- Модальное окно Регистрации -->
+
+        <div class="modal fade container-fluid"  id="exampleModalReg" tabindex="-1" aria-labelledby="exampleModalLabelReg" aria-hidden="true">
+          <div class="modal-dialog row justify-content-center align-items-center">
+            <div class="col-12 col-lg-9 modal-content" style="background: pink">
+              <div class="card card-registration" style="background: pink">
+                <div class="card-body p-4 p-md-5">
+                  <h3 class="mb-4 pb-2 pb-md-0 mb-md-5 modal-title">Регистрация</h3>
+                  <form>
+
+                    <div class="row">
+                      <div class="col-md-6 mb-4">
+
+                        <div class="form-outline">
+                          <input style="background: #ffe6ea;" type="text" id="firstName" class="form-control" />
+                          <label class="form-label" for="firstName">Имя</label>
+                        </div>
+
+                      </div>
+                      <div class="col-md-6 mb-4">
+
+                        <div class="form-outline">
+                          <input style="background: #ffe6ea;" type="text" id="lastName" class="form-control" />
+                          <label class="form-label" for="lastName">Фамилия</label>
+                        </div>
+
+                      </div>
+                    </div>
+
+                    <div class="row">
+                      <div class="col-md-6 mb-4 d-flex align-items-center">
+
+                        <div class="form-outline datepicker w-100">
+                          <input style="background: #ffe6ea;" type="text" class="form-control" id="birthdayDate" />
+                          <label for="birthdayDate" class="form-label">Дата рождения</label>
+                        </div>
+
+                      </div>
+                      <div class="col-md-6 mb-4">
+
+                        <h6 class="mb-2 pb-1">Пол: </h6>
+
+                        <div class="form-check form-check-inline">
+                          <input style="background: #ffe6ea;" class="form-check-input" type="radio" name="inlineRadioOptions" id="femaleGender"
+                                 value="option1" checked />
+                          <label class="form-check-label" for="femaleGender">Женский</label>
+                        </div>
+
+                        <div class="form-check form-check-inline">
+                          <input style="background: #ffe6ea;" class="form-check-input" type="radio" name="inlineRadioOptions" id="maleGender"
+                                 value="option2" />
+                          <label class="form-check-label" for="maleGender">Мужской</label>
+                        </div>
+
+                        <div class="form-check form-check-inline">
+                          <input style="background: #ffe6ea;" class="form-check-input" type="radio" name="inlineRadioOptions" id="maleGender2"
+                                 value="option2" />
+                          <label class="form-check-label" for="maleGender2">Я хз кто я</label>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="row">
+                      <div class="col-md-6 mb-4 pb-2">
+
+                        <div class="form-outline">
+                          <input style="background: #ffe6ea;" type="email" id="emailAddress" class="form-control" />
+                          <label class="form-label" for="emailAddress">Email</label>
+                        </div>
+
+                      </div>
+                      <div class="col-md-6 mb-4 pb-2">
+
+                        <div class="form-outline">
+                          <input style="background: #ffe6ea;" type="tel" id="phoneNumber" class="form-control" />
+                          <label class="form-label" for="phoneNumber">Номер телефона</label>
+                        </div>
+
+                      </div>
+                    </div>
+
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary buttonS" data-bs-dismiss="modal">Зарегестрироваться</button>
+                    </div>
+
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Модальное окно Авторизации -->
+        <div class="modal fade" id="exampleModalAut" tabindex="-1" aria-labelledby="exampleModalLabelAut" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content"style="background: pink">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabelAut">Авторизация</h5>
+                <button type="button" class="close buttonS" data-bs-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body align-self-center">
+                <input type="inputLogin"  style="background: #ffe6ea;" class="form-control" placeholder="Логин" aria-label="Search">
+              </div>
+              <div class="modal-body align-self-center">
+                <input type="inputPassword"  style="background: #ffe6ea;" class="form-control" placeholder="Пароль" aria-label="Search">
+              </div>
+              <div class="modal-footer align-self-center">
+                <button type="button" class="btn btn-secondary buttonS mx-2" data-bs-dismiss="modal">Войти</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- -------------------------- -->
       </div>
     </div>
   </header>
@@ -126,8 +241,8 @@
     <p class="float-end"><a href="#">Назад</a></p>
     <p>&copy; 2022 Company, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
   </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
 </main>
-
 <script src="../../Мой парикмахерский сайт2/js/bootstrap.bundle.min.js"></script>
 
 </html>
