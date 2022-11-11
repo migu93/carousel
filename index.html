@@ -48,19 +48,17 @@
         </div>
       </div>
     </div>
-    <div class="px-3 py-2 border-bottom border-2 mb-0">
+    <div class="py-2 border-bottom border-2 mb-0">
       <div class="container d-flex flex-wrap justify-content-center">
-        <div class="dropdown">
-          <button class="btn btn-secondary dropdown-toggle buttonS" style="width: 200px;"
-                  type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="true">
-            Каталог
-          </button>
-          <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-            <li><a class="dropdown-item" href="#">Действие</a></li>
-            <li><a class="dropdown-item" href="#">Другое действие</a></li>
-            <li><a class="dropdown-item" href="#">Что-то еще здесь</a></li>
-          </ul>
-        </div>
+        <ul class="topmenu">
+          <li style="list-style-type: none"><a href="" class="submenu-link buttonS btn btn-dark">Каталог</a>
+            <ul class="submenu shadow-lg" style="background: pink; list-style-type: none">
+              <li><a href="">Расчёски</a></li>
+              <li><a href="">Стайлинги</a></li>
+              <li><a href="">Уход</a></li>
+            </ul>
+          </li>
+        </ul>
 
         <form class="col-12 col-lg-auto mb-2 mb-lg-0 me-lg-auto">
           <input type="search"  style="background: #ffe6ea; margin-left: 30px;" class="form-control" placeholder="Поиск:" aria-label="Search">
@@ -131,9 +129,6 @@
                         </div>
 
                         <div class="form-check form-check-inline">
-                          <input style="background: #ffe6ea;" class="form-check-input" type="radio" name="inlineRadioOptions" id="maleGender2"
-                                 value="option2" />
-                          <label class="form-check-label" for="maleGender2">Я хз кто я</label>
                         </div>
                       </div>
                     </div>
@@ -150,8 +145,8 @@
                       <div class="col-md-6 mb-4 pb-2">
 
                         <div class="form-outline">
-                          <input style="background: #ffe6ea;" type="tel" id="phoneNumber" class="form-control" />
-                          <label class="form-label" for="phoneNumber">Номер телефона</label>
+                          <input type="password" style="background: #ffe6ea;" type="tel" id="phoneNumber" class="form-control" />
+                          <label class="form-label" for="phoneNumber">Пароль</label>
                         </div>
 
                       </div>
@@ -182,7 +177,7 @@
                 <input type="inputLogin"  style="background: #ffe6ea;" class="form-control" placeholder="Логин" aria-label="Search">
               </div>
               <div class="modal-body align-self-center">
-                <input type="inputPassword"  style="background: #ffe6ea;" class="form-control" placeholder="Пароль" aria-label="Search">
+                <input type="password"  style="background: #ffe6ea;" class="form-control" placeholder="Пароль" aria-label="Search">
               </div>
               <div class="modal-footer align-self-center">
                 <a class="btn btn-secondary buttonS mx-2" data-bs-dismiss="modal" href="LichnKabinet/LichKabinet.html">Войти</a>
