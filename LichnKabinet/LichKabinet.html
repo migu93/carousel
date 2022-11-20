@@ -33,11 +33,11 @@
     <link rel="stylesheet" href="../style.css">
   </head>
 
-  <header >
+  <header>
     <div class="px-3 py-2 bg-transparent text-white">
       <div class="container">
         <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
-          <a href="C:\Users\Никита\Desktop\bootstrap-5.0.1-examples\Мой парикмахерский КДА\index.html" class="d-flex align-items-center my-2 my-lg-0 me-lg-auto text-white text-decoration-none">
+          <a href="../LichnKabinet/LichKabinet.html" class="d-flex align-items-center my-2 my-lg-0 me-lg-auto text-white text-decoration-none">
             <img src="../Resourses/Логотип%20КДА.png" class="logotype" alt="Логотип">
           </a>
 
@@ -50,28 +50,144 @@
         </div>
       </div>
     </div>
-    <div class="px-3 py-2 border-bottom border-2 mb-0">
+    <div class="py-2 border-bottom border-2 mb-0">
       <div class="container d-flex flex-wrap justify-content-center">
-        <div class="dropdown">
-          <button class="btn btn-secondary dropdown-toggle buttonS" style="width: 200px;"
-                  type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="true">
-            Каталог
-          </button>
-          <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-            <li><a class="dropdown-item" href="#">Действие</a></li>
-            <li><a class="dropdown-item" href="#">Другое действие</a></li>
-            <li><a class="dropdown-item" href="#">Что-то еще здесь</a></li>
-          </ul>
-        </div>
+        <ul class="topmenu">
+          <li style="list-style-type: none"><a href="" class="submenu-link buttonS btn btn-dark">Каталог</a>
+            <ul class="submenu shadow-lg" style="background: pink; list-style-type: none">
+              <li><a href="../Каталог%20товаров/CatalogRascheski.html">Расчёски</a></li>
+              <li><a href="../Каталог%20товаров/Stalyng.html">Стайлинги</a></li>
+              <li><a href="../Каталог%20товаров/Yhod.html">Уход</a></li>
+            </ul>
+          </li>
+        </ul>
 
-        <form class="col-12 col-lg-auto mb-2 mb-lg-0 me-lg-auto textBoxSearch ">
-          <input type="search"  style="background: #ffe6ea; margin-left: 30px; width: 400px" class="form-control" placeholder="Поиск:" aria-label="Search">
+        <form class="col-12 col-lg-auto mb-2 mb-lg-0 me-lg-auto">
+          <input type="search"  style="background: #ffe6ea; margin-left: 30px;" class="form-control" placeholder="Поиск:" aria-label="Search">
         </form>
 
         <div class="text-end align-items-end pb-3">
-          <button type="button" class="btn btn-light text-dark me-2 buttonS">Войти</button>
-          <button type="button" class="btn btn-primary buttonS">Зарегестрироваться</button>
+          <button type="button" class="btn btn-light text-dark me-2 buttonS" data-bs-toggle="modal" data-bs-target="#exampleModalAut">Войти</button>
+          <button type="button" class="btn btn-primary buttonS " data-bs-toggle="modal" data-bs-target="#exampleModalReg">Зарегестрироваться</button>
         </div>
+        <!-- Модальное окно Регистрации -->
+
+        <div class="modal fade container-fluid"  id="exampleModalReg" tabindex="-1" aria-labelledby="exampleModalLabelReg" aria-hidden="true">
+          <div class="modal-dialog row justify-content-center align-items-center">
+            <div class="col-12 col-lg-9 modal-content" style="background: pink">
+              <div class="card card-registration" style="background: pink">
+                <div class="card-body p-4 p-md-5">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabelReg">Регистрация</h5>
+                    <button type="button" class="close buttonS" data-bs-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+
+                  <form>
+
+                    <div class="row">
+                      <div class="col-md-6 mb-4">
+
+                        <div class="form-outline">
+                          <input style="background: #ffe6ea;" type="text" id="firstName" class="form-control" />
+                          <label class="form-label" for="firstName">Имя</label>
+                        </div>
+
+                      </div>
+                      <div class="col-md-6 mb-4">
+
+                        <div class="form-outline">
+                          <input style="background: #ffe6ea;" type="text" id="lastName" class="form-control" />
+                          <label class="form-label" for="lastName">Фамилия</label>
+                        </div>
+
+                      </div>
+                    </div>
+
+                    <div class="row">
+                      <div class="col-md-6 mb-4 d-flex align-items-center">
+
+                        <div class="form-outline datepicker w-100">
+                          <input style="background: #ffe6ea;" type="text" class="form-control" id="birthdayDate" />
+                          <label for="birthdayDate" class="form-label">Дата рождения</label>
+                        </div>
+
+                      </div>
+                      <div class="col-md-6 mb-4">
+
+                        <h6 class="mb-2 pb-1">Пол: </h6>
+
+                        <div class="form-check form-check-inline">
+                          <input style="background: #ffe6ea;" class="form-check-input" type="radio" name="inlineRadioOptions" id="femaleGender"
+                                 value="option1" checked />
+                          <label class="form-check-label" for="femaleGender">Женский</label>
+                        </div>
+
+                        <div class="form-check form-check-inline">
+                          <input style="background: #ffe6ea;" class="form-check-input" type="radio" name="inlineRadioOptions" id="maleGender"
+                                 value="option2" />
+                          <label class="form-check-label" for="maleGender">Мужской</label>
+                        </div>
+
+                        <div class="form-check form-check-inline">
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="row">
+                      <div class="col-md-6 mb-4 pb-2">
+
+                        <div class="form-outline">
+                          <input style="background: #ffe6ea;" type="email" id="emailAddress" class="form-control" />
+                          <label class="form-label" for="emailAddress">Email</label>
+                        </div>
+
+                      </div>
+                      <div class="col-md-6 mb-4 pb-2">
+
+                        <div class="form-outline">
+                          <input type="password" style="background: #ffe6ea;" type="tel" id="phoneNumber" class="form-control" />
+                          <label class="form-label" for="phoneNumber">Пароль</label>
+                        </div>
+
+                      </div>
+                    </div>
+
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary buttonS" data-bs-dismiss="modal">Зарегестрироваться</button>
+                    </div>
+
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Модальное окно Авторизации -->
+        <div class="modal fade" id="exampleModalAut" tabindex="-1" aria-labelledby="exampleModalLabelAut" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content"style="background: pink">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabelAut">Авторизация</h5>
+                <button type="button" class="close buttonS" data-bs-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body align-self-center">
+                <input type="inputLogin"  style="background: #ffe6ea;" class="form-control" placeholder="Логин" aria-label="Search">
+              </div>
+              <div class="modal-body align-self-center">
+                <input type="password"  style="background: #ffe6ea;" class="form-control" placeholder="Пароль" aria-label="Search">
+              </div>
+              <div class="modal-footer align-self-center">
+                <a class="btn btn-secondary buttonS mx-2" data-bs-dismiss="modal" href="LichnKabinet/LichKabinet.html">Войти</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- -------------------------- -->
       </div>
     </div>
   </header>
