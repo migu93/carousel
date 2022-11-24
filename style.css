@@ -1,3 +1,17 @@
+:root {
+    --color-contrastPink: #ff9dab;
+}
+
+.bgOsnFon{
+    background: #ffe6ea;
+}
+.bgFonDop{
+    background: #fff2f5;
+}
+.bgPinkContrast{
+    background: #ff9dab;
+}
+
 .logotype{
     width: 150px;
 }

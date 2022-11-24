@@ -17,11 +17,49 @@
     <link rel="stylesheet" href="assets/css/Product.compiled.css">
     <link rel="stylesheet" href="../CSS/Footer-with-social-media-icons.css">
     <link rel="stylesheet" href="../CSS/Bold-BS4-Footer-Big-Logo.css">
+    <link rel="stylesheet" href="../style.css">
 </head>
-
+<header class="row pb-4" style="background: pink;">
+    <div class="col">
+        <nav class="navbar navbar-expand-md navigation-clean" style="padding:0px; background: pink">
+            <div class="container">
+                <div style="position: relative;"><button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-1"><span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+                    <a href="../Главная страничка/index.html">
+                        <img src="assets/img/Логотип%20КДА.png" style="width: 140px;">
+                    </a>
+                </div>
+                <div class="collapse navbar-collapse" id="navcol-1">
+                    <ul class="navbar-nav ms-auto my-3">
+                        <li class="nav-item"><button class="btn btn-light text-dark me-2 buttonS mx-2" type="button">Выйти</button>
+                            <button class="btn btn-primary buttonS mx-2" type="button">Регистрация</button></li>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="row">
+            <div class="col">
+                <div class="text-center col-10 ms-4">
+                    <div class="dropdown"><button class="btn aS text-light" aria-expanded="false" data-bs-toggle="dropdown" type="button">Каталог</button>
+                        <div class="dropdown-menu"><a class="dropdown-item" href="#">First Item</a><a class="dropdown-item" href="#">Second Item</a><a class="dropdown-item" href="#">Third Item</a></div>
+                    </div>
+                </div>
+            </div>
+            <form class="col-4 m-sm-2 mb-2 mb-lg-0">
+                <input type="search"  style="background: #ffe6ea; margin-left: 30px;" class="form-control" placeholder="Поиск:" aria-label="Search">
+            </form>
+            <div class="col">
+                <div class="text-dark text-center mx-4">
+                    <li style="list-style-type: none">+7 (902) 335 48-52</li>
+                    <li style="list-style-type: none">likeLove@mail.ru</li>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
 <body id="page-top">
     <div id="wrapper">
-        <nav class="navbar navbar-dark align-items-start sidebar sidebar-dark accordion bg-gradient-primary p-0">
+        <nav class="bgPinkContrast navbar navbar-dark align-items-start sidebar sidebar-dark accordion bg-gradient-primary p-0">
             <div class="container-fluid d-flex flex-column p-0">
                 <hr class="sidebar-divider my-0">
                 <ul class="navbar-nav text-light" id="accordionSidebar">
@@ -35,43 +73,14 @@
             </div>
         </nav>
         <div class="d-flex flex-column" id="content-wrapper">
-            <div id="content">
+            <div id="content" class="bgOsnFon">
                 <div class="container-fluid">
                     <h3 class="text-dark my-4">Избранное</h3>
                     <div class="row mb-3">
-                        <div class="col"><div class="container">
-    <div class="images">
-        <img src="http://mistillas.cl/wp-content/uploads/2018/04/Nike-Epic-React-Flyknit-%E2%80%9CPearl-Pink%E2%80%9D-01.jpg">
-    </div>
-    <div class="slideshow-buttons">
-        <div class="one"></div>
-        <div class="two"></div>
-        <div class="three"></div>
-        <div class="four"></div>
-    </div>
-    <p class="pick">choose size</p>
-    <div class="sizes">
-        <div class="size">5</div>
-        <div class="size">6</div>
-        <div class="size">7</div>
-        <div class="size">8</div>
-        <div class="size">9</div>
-        <div class="size">10</div>
-        <div class="size">11</div>
-        <div class="size">12</div>
-    </div>
-    <div class="product">
-        <p>Women's Running Shoe</p>
-        <h1>Nike Epic React Flyknit</h1>
-        <h2>$150</h2>
-        <p class="desc">The Nike Epic React Flyknit foam cushioning is responsive yet light-weight, durable yet soft. This creates a sensation that not only enhances the feeling of moving forward, but makes running feel fun, too.</p>
-        <div class="buttons">
-            <button class="add">Add to Cart</button>
-            <button class="like"><span>♥</span></button>
-        </div>
-    </div>
-</div>
+                        <div class="col">
+                            <div class="container">
 
+                            </div>
 <footer>
     <p>made by <a href="https://codepen.io/juliepark"> julie</a> ♡
 </p></footer></div>

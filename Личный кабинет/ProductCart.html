@@ -17,25 +17,63 @@
     <link rel="stylesheet" href="assets/css/Product.compiled.css">
     <link rel="stylesheet" href="../CSS/Footer-with-social-media-icons.css">
     <link rel="stylesheet" href="../CSS/Bold-BS4-Footer-Big-Logo.css">
+    <link rel="stylesheet" href="../style.css">
 </head>
-
+<header class="row pb-4" style="background: pink;">
+    <div class="col">
+        <nav class="navbar navbar-expand-md navigation-clean" style="padding:0px; background: pink">
+            <div class="container">
+                <div style="position: relative;"><button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-1"><span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+                    <a href="../Главная страничка/index.html">
+                        <img src="assets/img/Логотип%20КДА.png" style="width: 140px;">
+                    </a>
+                </div>
+                <div class="collapse navbar-collapse" id="navcol-1">
+                    <ul class="navbar-nav ms-auto my-3">
+                        <li class="nav-item"><button class="btn btn-light text-dark me-2 buttonS mx-2" type="button">Выйти</button>
+                            <button class="btn btn-primary buttonS mx-2" type="button">Регистрация</button></li>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="row">
+            <div class="col">
+                <div class="text-center col-10 ms-4">
+                    <div class="dropdown"><button class="btn aS text-light" aria-expanded="false" data-bs-toggle="dropdown" type="button">Каталог</button>
+                        <div class="dropdown-menu"><a class="dropdown-item" href="#">First Item</a><a class="dropdown-item" href="#">Second Item</a><a class="dropdown-item" href="#">Third Item</a></div>
+                    </div>
+                </div>
+            </div>
+            <form class="col-4 m-sm-2 mb-2 mb-lg-0">
+                <input type="search"  style="background: #ffe6ea; margin-left: 30px;" class="form-control" placeholder="Поиск:" aria-label="Search">
+            </form>
+            <div class="col">
+                <div class="text-dark text-center mx-4">
+                    <li style="list-style-type: none">+7 (902) 335 48-52</li>
+                    <li style="list-style-type: none">likeLove@mail.ru</li>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
 <body id="page-top">
     <div id="wrapper">
-        <nav class="navbar navbar-dark align-items-start sidebar sidebar-dark accordion bg-gradient-primary p-0">
+        <nav class="navbar bgPinkContrast navbar-dark align-items-start sidebar sidebar-dark accordion bg-gradient-primary p-0">
             <div class="container-fluid d-flex flex-column p-0">
                 <hr class="sidebar-divider my-0">
                 <ul class="navbar-nav text-light" id="accordionSidebar">
                     <li class="nav-item"></li>
                     <li class="nav-item"><a class="nav-link" href="profile.html"><i class="fas fa-user"></i><span>Профиль</span></a></li>
                     <li class="nav-item"><a class="nav-link" href="table.html"><i class="fas fa-table"></i><span>История заказов</span></a></li>
-                    <li class="nav-item"><a class="nav-link" href="login.html"><i class="far fa-user-circle"></i><span>Корзина</span></a></li>
+                    <li class="nav-item"><a class="nav-link" href="ProductCart.html"><i class="far fa-user-circle"></i><span>Корзина</span></a></li>
                     <li class="nav-item"><a class="nav-link" href="Favourites.html"><i class="fas fa-user-circle"></i><span>Избранное</span></a></li>
                 </ul>
                 <div class="text-center d-none d-md-inline"><button class="btn rounded-circle border-0" id="sidebarToggle" type="button"></button></div>
             </div>
         </nav>
         <div class="d-flex flex-column" id="content-wrapper">
-            <div id="content">
+            <div id="content" class="bgOsnFon">
                 <div class="container-fluid">
                     <h3 class="text-dark my-4">Корзина</h3>
                     <div class="row mb-3">
@@ -45,7 +83,7 @@
   <div class="pb-5">
     <div class="container">
       <div class="row">
-        <div class="col-lg-12 p-5 bg-white rounded shadow-sm mb-5">
+        <div class="col-lg-12 p-5 rounded shadow-sm mb-5 bgFonDop">
 
           <!-- Shopping cart table -->
           <div class="table-responsive">
@@ -53,13 +91,13 @@
               <thead>
                 <tr>
                   <th scope="col" class="border-0 bg-light">
-                    <div class="p-2 px-3 text-uppercase">Product</div>
+                    <div class="p-2 px-3 text-uppercase">Товары</div>
                   </th>
                   <th scope="col" class="border-0 bg-light">
-                    <div class="py-2 text-uppercase">Price</div>
+                    <div class="py-2 text-uppercase">Цена</div>
                   </th>
                   <th scope="col" class="border-0 bg-light">
-                    <div class="py-2 text-uppercase">Quantity</div>
+                    <div class="py-2 text-uppercase">Колличество</div>
                   </th>
                   <th scope="col" class="border-0 bg-light">
                     <div class="py-2 text-uppercase">Remove</div>
@@ -71,40 +109,40 @@
                   <th scope="row" class="border-0">
                     <div class="p-2">
                       <img src="https://res.cloudinary.com/mhmd/image/upload/v1556670479/product-1_zrifhn.jpg" alt="" width="70" class="img-fluid rounded shadow-sm">
-                      <div class="ml-3 d-inline-block align-middle">
+                      <div class="ml-2 d-inline-block align-middle mx-4">
                         <h5 class="mb-0"> <a href="#" class="text-dark d-inline-block align-middle">Timex Unisex Originals</a></h5><span class="text-muted font-weight-normal font-italic d-block">Category: Watches</span>
                       </div>
                     </div>
                   </th>
-                  <td class="border-0 align-middle"><strong>$79.00</strong></td>
-                  <td class="border-0 align-middle"><strong>3</strong></td>
-                  <td class="border-0 align-middle"><a href="#" class="text-dark"><i class="fa fa-trash"></i></a></td>
+                  <td class="border-0 align-middle text-center"><strong>$79.00</strong></td>
+                  <td class="border-0 align-middle text-center"><strong>3</strong></td>
+                  <td class="border-0 align-middle text-center"><a href="#" class="text-dark"><i class="fa fa-trash"></i></a></td>
                 </tr>
                 <tr>
                   <th scope="row">
                     <div class="p-2">
                       <img src="https://res.cloudinary.com/mhmd/image/upload/v1556670479/product-3_cexmhn.jpg" alt="" width="70" class="img-fluid rounded shadow-sm">
-                      <div class="ml-3 d-inline-block align-middle">
+                      <div class="ml-2 d-inline-block align-middle mx-4">
                         <h5 class="mb-0"><a href="#" class="text-dark d-inline-block">Lumix camera lense</a></h5><span class="text-muted font-weight-normal font-italic">Category: Electronics</span>
                       </div>
                     </div>
                   </th>
-                  <td class="align-middle"><strong>$79.00</strong></td>
-                  <td class="align-middle"><strong>3</strong></td>
-                  <td class="align-middle"><a href="#" class="text-dark"><i class="fa fa-trash"></i></a>
+                  <td class="align-middle text-center"><strong>$79.00</strong></td>
+                  <td class="align-middle text-center"><strong>3</strong></td>
+                  <td class="align-middle text-center"><a href="#" class="text-dark"><i class="fa fa-trash"></i></a>
                   </td>
                 </tr>
                 <tr>
                   <th scope="row">
                     <div class="p-2">
                       <img src="https://res.cloudinary.com/mhmd/image/upload/v1556670479/product-2_qxjis2.jpg" alt="" width="70" class="img-fluid rounded shadow-sm">
-                      <div class="ml-3 d-inline-block align-middle">
+                      <div class="ml-3 d-inline-block align-middle mx-4">
                         <h5 class="mb-0"> <a href="#" class="text-dark d-inline-block">Gray Nike running shoe</a></h5><span class="text-muted font-weight-normal font-italic">Category: Fashion</span>
                       </div>
                     </div>
-                    <td class="align-middle"><strong>$79.00</strong></td>
-                    <td class="align-middle"><strong>3</strong></td>
-                    <td class="align-middle"><a href="#" class="text-dark"><i class="fa fa-trash"></i></a>
+                    <td class="align-middle text-center"><strong>$79.00</strong></td>
+                    <td class="align-middle text-center"><strong>3</strong></td>
+                    <td class="align-middle text-center"><a href="#" class="text-dark"><i class="fa fa-trash"></i></a>
                     </td>
                 </tr>
               </tbody>
@@ -114,36 +152,18 @@
         </div>
       </div>
 
-      <div class="row py-5 p-4 bg-white rounded shadow-sm">
+      <div class="row py-5 p-4 rounded shadow-sm">
         <div class="col-lg-6">
-          <div class="bg-light rounded-pill px-4 py-3 text-uppercase font-weight-bold">Coupon code</div>
+          <div class="bg-light rounded-pill px-4 py-3 text-uppercase font-weight-bold">Сумма заказа</div>
           <div class="p-4">
-            <p class="font-italic mb-4">If you have a coupon code, please enter it in the box below</p>
-            <div class="input-group mb-4 border rounded-pill p-2">
-              <input type="text" placeholder="Apply coupon" aria-describedby="button-addon3" class="form-control border-0">
-              <div class="input-group-append border-0">
-                <button id="button-addon3" type="button" class="btn btn-dark px-4 rounded-pill"><i class="fa fa-gift mr-2"></i>Apply coupon</button>
-              </div>
-            </div>
-          </div>
-          <div class="bg-light rounded-pill px-4 py-3 text-uppercase font-weight-bold">Instructions for seller</div>
-          <div class="p-4">
-            <p class="font-italic mb-4">If you have some information for the seller you can leave them in the box below</p>
-            <textarea name="" cols="30" rows="2" class="form-control"></textarea>
-          </div>
-        </div>
-        <div class="col-lg-6">
-          <div class="bg-light rounded-pill px-4 py-3 text-uppercase font-weight-bold">Order summary </div>
-          <div class="p-4">
-            <p class="font-italic mb-4">Shipping and additional costs are calculated based on values you have entered.</p>
+            <p class="font-italic mb-4">Доставка и дополнительные расходы рассчитываются на основе введенных вами значений.</p>
             <ul class="list-unstyled mb-4">
-              <li class="d-flex justify-content-between py-3 border-bottom"><strong class="text-muted">Order Subtotal </strong><strong>$390.00</strong></li>
-              <li class="d-flex justify-content-between py-3 border-bottom"><strong class="text-muted">Shipping and handling</strong><strong>$10.00</strong></li>
-              <li class="d-flex justify-content-between py-3 border-bottom"><strong class="text-muted">Tax</strong><strong>$0.00</strong></li>
-              <li class="d-flex justify-content-between py-3 border-bottom"><strong class="text-muted">Total</strong>
-                <h5 class="font-weight-bold">$400.00</h5>
+              <li class="d-flex justify-content-between py-3 border-bottom"><strong class="text-muted">Промежуточный итог заказа</strong><strong>11350 ₽</strong></li>
+              <li class="d-flex justify-content-between py-3 border-bott₽om"><strong class="text-muted">Доставка и погрузочно-разгрузочные работы</strong><strong>1000 ₽</strong></li>
+              <li class="d-flex justify-content-between py-3 border-bottom"><strong class="text-muted">К оплате</strong>
+                <h5 class="font-weight-bold">12350 ₽</h5>
               </li>
-            </ul><a href="#" class="btn btn-dark rounded-pill py-2 btn-block">Procceed to checkout</a>
+            </ul><a href="#" class="btn btn-primary rounded-pill py-2 buttonS">К оплате</a>
           </div>
         </div>
       </div>
@@ -151,7 +171,8 @@
     </div>
   </div>
 </div>
-</div></div>
+</div>
+                        </div>
                     </div>
                     <div class="card shadow mb-5"></div>
                 </div>
